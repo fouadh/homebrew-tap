@@ -5,17 +5,17 @@ class Gocan < Formula
   if OS.mac?
     url "https://github.com/fouadh/gocan/releases/download/v#{version}/gocan-darwin-amd64"
     sha256 "0126ba572ee657af9b0089ef114d8f8c6fd846dce9d35b2592c2946e0522360d"
+    exe "gocan-darwin-amd64"
   elsif OS.linux?
     url "https://github.com/fouadh/gocan/releases/download/v#{version}/gocan-linux-amd64"
     sha256 "4466ed9b2c960404c7683caa6e0c4de7b2473e59cda30e6a7586485f501b18b9"
+    exe "gocan-linux-amd64"
   end
   
   depends_on :arch => :x86_64
 
-  # depends_on "cmake" => :build
-
   def install
-    bin.install gocan
+    bin.install exe
   end
 
   test do
