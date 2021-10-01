@@ -14,9 +14,9 @@ class Gocan < Formula
 
   def install
     if OS.mac?
-      bin.install gocan-darwin-amd64 => gocan
+      bin.install "gocan-darwin-amd64" => "gocan"
     elsif OS.linux?
-      bin.install gocan-linux-amd64 => gocan
+      bin.install "gocan-linux-amd64" => "gocan"
     end
   end
 
