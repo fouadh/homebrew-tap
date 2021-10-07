@@ -1,13 +1,13 @@
 class Gocan < Formula
   desc "Forensics Code Analyzer"
   homepage "https://github.com/fouadh/gocan"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     url "https://github.com/fouadh/gocan/releases/download/v#{version}/gocan-darwin-amd64"
-    sha256 "0126ba572ee657af9b0089ef114d8f8c6fd846dce9d35b2592c2946e0522360d"
+    sha256 "f92ad48d5a382abad936aa982d8a1d8af76b1fa86c1f795ab0b324bf73c0845a"
   elsif OS.linux?
     url "https://github.com/fouadh/gocan/releases/download/v#{version}/gocan-linux-amd64"
-    sha256 "4466ed9b2c960404c7683caa6e0c4de7b2473e59cda30e6a7586485f501b18b9"
+    sha256 "b23966820c141b40744f63a3acf39b889292c9d852d178e12f3aa62c7806b705"
   end
   
   depends_on :arch => :x86_64
