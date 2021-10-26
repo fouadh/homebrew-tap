@@ -16,6 +16,8 @@ fi
 
 $GOCAN --version
 
+$GOCAN start-db
+
 echo "Cleaning up before starting"
 $GOCAN delete-scene maat
 
