@@ -3,10 +3,14 @@ name: gocan
 on:
   push:
     branches: [main]
+    #paths:
+    #  - 'gocan.rb'
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+    
     - name: run the test
-      run: ls -l
+      run: ./test/gocan-test.sh
