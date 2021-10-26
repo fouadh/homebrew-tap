@@ -1,0 +1,14 @@
+name: gocan
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'gocan.rb'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run the test
+      run: ./test/gocan-test.sh
