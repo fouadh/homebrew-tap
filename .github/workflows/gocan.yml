@@ -3,8 +3,8 @@ name: gocan
 on:
   push:
     branches: [main]
-    #paths:
-    #  - 'gocan.rb'
+    paths:
+      - 'gocan.rb'
 
 jobs:
   test:
