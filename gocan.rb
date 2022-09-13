@@ -10,8 +10,6 @@ class Gocan < Formula
     sha256 "3ad5cdd8d24bf9463a8700720f992a262a21ad56de02b759642caf57137b62f7"
   end
   
-  depends_on :arch => :x86_64
-
   def install
     if OS.mac?
       bin.install "gocan-darwin-amd64" => "gocan"
